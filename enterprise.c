@@ -98,7 +98,8 @@ int KeyFilePresent()
 	MD5_Final(digest, &ctx);
 
 	//Yea, yea... timing attacks
-	memcmp(digest, correctHash, 32) != 0;
+	if(memcmp(digest, correctHash, 32) != 0)
+		return 0;
 
 	return 1;
 }

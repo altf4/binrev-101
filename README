@@ -5,9 +5,9 @@ You may require the following dependencies:
 
 On a debian machine such as Ubuntu, do the following:
 
-	sudo apt-get install libreadline6 libssl
+	sudo apt-get install libreadline6 libssl1.0.0
 
 on a 64 bit machine, you will need:
 
-	sudo apt-get install libreadline6:i386 libssl
+	sudo apt-get install libreadline6:i386 libssl1.0.0:i386
 
