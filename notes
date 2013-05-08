@@ -1,0 +1,29 @@
+100:
+strings
+
+
+200: (objdump)
+HINT: strings. What looks interesting? Disassemble
+work backwards from "Congrats" -> 0x804883c. 
+HINT: Reverse the function 804883c (string compare)
+HINT: Reverse the function before the string compare.
+
+
+300: (gdb breakpoint)
+HINT: Start the same as before
+"congrats" string at 8048a64, used at 8048950
+HINT: 8048950 looks hard, doesn't it? But do you really need to reverse it by hand?
+HINT: use gdb
+b *0x804894c
+x/s 0x804a034
+
+
+400: (ltrace and strace)
+HINT: Start the same as before. 
+HINT: Look for something out of place
+HINT: Dynamic analysis will be best
+HINT: run ltrace
+
+500: (ghex)
+HINT: This is DRM
+74->75 @ 8048dd1

@@ -1,0 +1,13 @@
+You may require the following dependencies:
+
+	readline
+	libssl
+
+On a debian machine such as Ubuntu, do the following:
+
+	sudo apt-get install libreadline6 libssl
+
+on a 64 bit machine, you will need:
+
+	sudo apt-get install libreadline6:i386 libssl
+
